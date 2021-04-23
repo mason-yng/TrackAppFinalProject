@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00468F"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="MultiTrax"
+        android:fontFamily="cursive"
+        android:textSize="40sp"
+        android:textColor="#FFD700" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:gravity="center"
+        android:onClick="projlogo"
+        android:src="@drawable/projlogo"
+        android:textColor="#FFFFFF" />
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tracking for all your needs!"
+        android:textSize="20sp"
+        android:textColor="#FFFFFF"
+        android:gravity="center"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="For multi purposes + more"
+        android:textSize="20sp"
+        android:textColor="#FFFFFF"
+        android:background="#000000"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+        <Button
+            android:id="@+id/toIns"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Instructions"
+            android:layout_marginTop="10dp"
+            android:textSize="20sp"
+            android:padding="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="10dp"
+            android:onClick="toIns"
+            android:fontFamily="cursive"
+            android:background="#FFFFFF"
+            android:layout_gravity="center"/>
+
+        <Button
+            android:id="@+id/toTrack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Track"
+            android:padding="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:textSize="20sp"
+            android:layout_marginBottom="10dp"
+            android:onClick="toTrack"
+            android:layout_toRightOf="@+id/toIns"
+            android:fontFamily="cursive"
+            android:background="#FFFFFF"
+            android:layout_gravity="center"/>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="App example:"
+        android:textSize="20sp"
+        android:textColor="#FFFFFF"
+        android:background="#000000"/>
+
+
+
+</LinearLayout>

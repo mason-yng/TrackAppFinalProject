@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00468F"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="MultiTrax Fitness"
+            android:textSize="25sp"
+            android:fontFamily="casual"
+            android:textStyle="italic"
+            android:textColor="#FFD700"/>
+
+        <Chronometer
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:padding="10dp"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/fitness"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_alignParentRight="true"
+            android:scaleX="1"
+            android:scaleY="1"
+            android:src="@drawable/fitness"/>
+
+        <TextView
+            android:layout_alignParentRight="true"
+            android:layout_width="75dp"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="10sp"
+            android:text="Fitness"
+            android:textColor="#000000"/>
+
+        <RelativeLayout
+            android:layout_below="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal">
+
+            <Button
+                android:layout_below="@+id/pushupPic"
+                android:id="@+id/startFitness"
+                android:layout_centerHorizontal="true"
+                android:background="#FFFFFF"
+                android:layout_width="50dp"
+                android:layout_height="60dp"
+                android:onClick="startFitness"
+                android:text="Start"/>
+
+
+            <TextView
+                android:id="@+id/fitInstruc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:text="Enter your goal for each exercise"
+                android:textColor="#FFFFFF"/>
+
+
+            <TextView
+                android:layout_marginTop="20dp"
+                android:id="@+id/situpText"
+                android:layout_width="150dp"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:text="Sit-Ups"
+                android:textSize="14sp"
+                android:fontFamily="cursive"
+                android:layout_below="@+id/fitInstruc"
+                android:layout_alignParentRight="true"
+                android:textColor="#FFFFFF"/>
+            <EditText
+                android:id="@+id/situpGoal"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/situpText"
+                android:layout_alignParentRight="true"
+                android:textColorHint="#FFFFFF"
+                android:textSize="25sp"
+                android:gravity="center"
+                android:textColor="#FFFFFF"
+                android:inputType="number"
+                android:hint="Goal?"/>
+
+            <ImageView
+                android:id="@+id/situpPic"
+                android:layout_width="150dp"
+                android:layout_height="100dp"
+                android:layout_below="@+id/situpGoal"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/situp"/>
+
+            <ImageView
+                android:visibility="invisible"
+                android:id="@+id/checksitup"
+                android:layout_width="150dp"
+                android:layout_height="100dp"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/situpGoal"
+                android:src="@drawable/checkmark"/>
+
+            <Button
+                android:visibility="invisible"
+                android:id="@+id/addSitup"
+                android:layout_width="75dp"
+                android:layout_height="35dp"
+                android:layout_below="@+id/situpPic"
+                android:text="+1 to goal"
+                android:onClick="addSitup"
+                android:layout_toLeftOf="@id/minusSitup"
+                android:background="#FF0000"/>
+
+            <Button
+                android:visibility="invisible"
+                android:id="@+id/minusSitup"
+                android:layout_width="75dp"
+                android:layout_height="35dp"
+                android:layout_below="@+id/situpPic"
+                android:text="-1"
+                android:onClick="minusSitup"
+                android:textStyle="bold"
+                android:layout_alignParentRight="true"
+                android:background="#00FF00"/>
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:id="@+id/pushupText"
+                android:layout_width="150dp"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:text="Push-Up"
+                android:textSize="14sp"
+                android:fontFamily="cursive"
+                android:layout_below="@+id/fitInstruc"
+                android:layout_alignParentLeft="true"
+                android:textColor="#FFFFFF"/>
+            <EditText
+                android:id="@+id/pushupGoal"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/pushupText"
+                android:layout_alignParentLeft="true"
+                android:textColorHint="#FFFFFF"
+                android:textSize="25sp"
+                android:gravity="center"
+                android:textColor="#FFFFFF"
+                android:inputType="number"
+                android:hint="Goal?"/>
+
+
+            <ImageView
+                android:id="@+id/pushupPic"
+                android:layout_width="150dp"
+                android:layout_height="100dp"
+                android:layout_below="@+id/pushupGoal"
+                android:src="@drawable/pushup"/>
+
+            <ImageView
+                android:visibility="invisible"
+                android:id="@+id/checkpushup"
+                android:layout_width="150dp"
+                android:layout_height="100dp"
+                android:layout_below="@+id/pushupGoal"
+                android:src="@drawable/checkmark"/>
+
+            <Button
+                android:visibility="invisible"
+                android:id="@+id/addPushup"
+                android:layout_width="75dp"
+                android:layout_height="35dp"
+                android:layout_below="@+id/pushupPic"
+                android:text="+1 to goal"
+                android:onClick="addPushup"
+                android:background="#FF0000"/>
+
+            <Button
+                android:visibility="invisible"
+                android:id="@+id/minusPushup"
+                android:layout_width="75dp"
+                android:layout_height="35dp"
+                android:layout_below="@+id/pushupPic"
+                android:layout_toRightOf="@+id/addPushup"
+                android:text="-1"
+                android:textStyle="bold"
+                android:onClick="minusPushup"
+                android:background="#00FF00"/>
+
+
+            <EditText
+                android:id="@+id/squatGoal"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:textColor="#FFFFFF"
+                android:inputType="number"
+                android:layout_below="@+id/addPushup"
+                android:textColorHint="#FFFFFF"
+                android:textSize="25sp"
+                android:gravity="center"
+                android:hint="Goal?"/>
+
+
+            <ImageView
+                android:id="@+id/squatPic"
+                android:layout_width="150dp"
+                android:layout_height="100dp"
+                android:layout_below="@+id/squatGoal"
+                android:src="@drawable/squats"/>
+
+            <ImageView
+                android:visibility="invisible"
+                android:id="@+id/checksquat"
+                android:layout_width="150dp"
+                android:layout_height="100dp"
+                android:layout_below="@+id/squatGoal"
+                android:src="@drawable/checkmark"/>
+
+            <Button
+                android:visibility="invisible"
+                android:id="@+id/addSquat"
+                android:layout_width="75dp"
+                android:layout_height="35dp"
+                android:onClick="addSquat"
+                android:layout_below="@+id/squatPic"
+                android:text="+1 to goal"
+                android:background="#FF0000"/>
+
+            <Button
+                android:visibility="invisible"
+                android:id="@+id/minusSquat"
+                android:layout_width="75dp"
+                android:onClick="minusSquat"
+                android:layout_height="35dp"
+                android:layout_below="@+id/squatPic"
+                android:layout_toRightOf="@+id/addSquat"
+                android:text="-1"
+                android:textStyle="bold"
+                android:background="#00FF00"/>
+
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:id="@+id/freeText"
+                android:layout_width="150dp"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:text="Enter your own workout!"
+                android:textSize="14sp"
+                android:layout_below="@+id/addSitup"
+                android:layout_alignParentRight="true"
+                android:textColor="#FFFFFF"/>
+
+            <EditText
+                android:id="@+id/freeWorkout"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/freeText"
+                android:layout_alignParentRight="true"
+                android:textColorHint="#FFFFFF"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:hint="What is your workout called?"/>
+
+            <EditText
+                android:id="@+id/freeGoal"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/freeWorkout"
+                android:layout_alignParentRight="true"
+                android:textColorHint="#FFFFFF"
+                android:inputType="number"
+                android:textColor="#FFFFFF"
+                android:textSize="25sp"
+                android:gravity="center"
+                android:hint="Goal?"/>
+
+            <ImageView
+                android:visibility="invisible"
+                android:id="@+id/checkfree"
+                android:layout_width="150dp"
+                android:layout_height="100dp"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/freeText"
+                android:src="@drawable/checkmark"/>
+
+
+            <Button
+                android:visibility="invisible"
+                android:id="@+id/addFree"
+                android:layout_width="75dp"
+                android:layout_height="35dp"
+                android:layout_below="@+id/freeGoal"
+                android:onClick="addFree"
+                android:text="+1 to goal"
+                android:layout_toLeftOf="@id/minusFree"
+                android:background="#FF0000"/>
+
+            <Button
+                android:visibility="invisible"
+                android:id="@+id/minusFree"
+                android:layout_width="75dp"
+                android:layout_height="35dp"
+                android:layout_below="@+id/freeGoal"
+                android:text="-1"
+                android:onClick="minusFree"
+                android:textStyle="bold"
+                android:layout_alignParentRight="true"
+                android:background="#00FF00"/>
+
+
+            <Button
+                android:id="@+id/toTrack"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:layout_alignParentBottom="true"
+                android:text="Track"
+                android:textSize="20sp"
+                android:fontFamily="cursive"
+                android:onClick="toTrack"
+                android:background="#FFFFFF"/>
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

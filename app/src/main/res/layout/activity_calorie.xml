@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00468F"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="MultiTrax Calorie"
+            android:textSize="25sp"
+            android:fontFamily="casual"
+            android:textStyle="italic"
+            android:textColor="#FFD700"/>
+
+        <Chronometer
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:padding="10dp"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/calorie"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_alignParentRight="true"
+            android:scaleX="1"
+            android:scaleY="1"
+            android:src="@drawable/calories"/>
+
+        <TextView
+            android:layout_alignParentRight="true"
+            android:layout_width="75dp"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Calorie"
+            android:textColor="#FFFFFF"/>
+        <RelativeLayout
+            android:layout_below="@+id/calorie"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal">
+
+
+            <TextView
+                android:id="@+id/trackcalories"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Track your calories for the week"
+                android:textColor="#FFFFFF"
+                android:layout_below="@+id/mood"
+                android:layout_alignParentRight="true"/>
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:id="@+id/monText"
+                android:layout_width="150dp"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:text="Monday"
+                android:background="#FFD700"
+                android:textSize="20sp"
+                android:fontFamily="cursive"
+                android:layout_below="@+id/trackcalories"
+                android:layout_alignParentRight="true"
+                android:textColor="#000000"/>
+
+            <EditText
+                android:id="@+id/Monday"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/monText"
+                android:layout_alignParentRight="true"
+                android:textColorHint="#FFFFFF"
+                android:textSize="14sp"
+                android:gravity="center"
+                android:inputType="number"
+                android:hint="Total Calorie Intake"/>
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:id="@+id/tueText"
+                android:layout_width="150dp"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:background="#FFD700"
+                android:text="Tuesday"
+                android:textSize="20sp"
+                android:fontFamily="cursive"
+                android:layout_below="@+id/trackcalories"
+                android:layout_alignParentLeft="true"
+                android:textColor="#000000"/>
+
+            <EditText
+                android:id="@+id/Tuesday"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tueText"
+                android:layout_alignParentLeft="true"
+                android:textColorHint="#FFFFFF"
+                android:gravity="center"
+                android:textSize="14sp"
+                android:inputType="number"
+                android:hint="Total Calorie Intake"/>
+
+            <TextView
+                android:layout_marginTop="20dp"
+                android:id="@+id/wedText"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:background="#FF0F55"
+                android:text="Wednesday"
+                android:textSize="20sp"
+                android:fontFamily="cursive"
+                android:gravity="center"
+                android:layout_below="@+id/Monday"
+                android:layout_alignParentRight="true"
+                android:textColor="#FFFFFF"/>
+
+            <EditText
+                android:id="@+id/Wednesday"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/wedText"
+                android:layout_alignParentRight="true"
+                android:textColorHint="#FFFFFF"
+                android:textSize="14sp"
+                android:gravity="center"
+                android:inputType="number"
+                android:hint="Total Calorie Intake"/>
+
+            <TextView
+                android:layout_marginTop="20dp"
+                android:id="@+id/thuText"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:background="#FF0F55"
+                android:text="Thursday"
+                android:textSize="20sp"
+                android:fontFamily="cursive"
+                android:gravity="center"
+                android:layout_below="@+id/Tuesday"
+                android:layout_alignParentLeft="true"
+                android:textColor="#FFFFFF"/>
+
+            <EditText
+                android:id="@+id/Thursday"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/thuText"
+                android:layout_alignParentLeft="true"
+                android:textColorHint="#FFFFFF"
+                android:gravity="center"
+                android:textSize="14sp"
+                android:inputType="number"
+                android:hint="Total Calorie Intake"/>
+
+            <TextView
+                android:layout_marginTop="20dp"
+                android:id="@+id/friText"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Friday"
+                android:textSize="20sp"
+                android:fontFamily="cursive"
+                android:background="#FFD700"
+                android:gravity="center"
+                android:layout_below="@+id/Wednesday"
+                android:layout_alignParentRight="true"
+                android:textColor="#000000"/>
+
+            <EditText
+                android:id="@+id/Friday"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/friText"
+                android:layout_alignParentRight="true"
+                android:textColorHint="#FFFFFF"
+                android:gravity="center"
+                android:textSize="14sp"
+                android:inputType="number"
+                android:hint="Total Calorie Intake"/>
+
+            <TextView
+                android:layout_marginTop="20dp"
+                android:id="@+id/satText"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Saturday"
+                android:textSize="20sp"
+                android:fontFamily="cursive"
+                android:background="#FFD700"
+                android:gravity="center"
+                android:layout_below="@+id/Thursday"
+                android:layout_alignParentLeft="true"
+                android:textColor="#000000"/>
+
+            <EditText
+                android:id="@+id/Saturday"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/satText"
+                android:layout_alignParentLeft="true"
+                android:textColorHint="#FFFFFF"
+                android:textSize="14sp"
+                android:gravity="center"
+                android:inputType="number"
+                android:hint="Total Calorie Intake"/>
+
+            <TextView
+                android:layout_marginTop="20dp"
+                android:id="@+id/sunText"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Sunday"
+                android:textSize="20sp"
+                android:fontFamily="cursive"
+                android:background="#FF0F55"
+                android:gravity="center"
+                android:layout_below="@+id/Friday"
+                android:layout_alignParentRight="true"
+                android:textColor="#FFFFFF"/>
+
+            <EditText
+                android:id="@+id/Sunday"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/sunText"
+                android:layout_alignParentRight="true"
+                android:textColorHint="#FFFFFF"
+                android:gravity="center"
+                android:textSize="14sp"
+                android:inputType="number"
+                android:hint="Total Calorie Intake"/>
+
+
+
+            <Button
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:layout_alignParentBottom="true"
+                android:text="Track"
+                android:textSize="20sp"
+                android:fontFamily="cursive"
+                android:onClick="toTrack"
+                android:background="#FFFFFF"/>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

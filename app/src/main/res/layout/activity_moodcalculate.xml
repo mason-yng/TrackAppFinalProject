@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FF468F"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Calculate Mood"
+            android:textSize="25sp"
+            android:fontFamily="casual"
+            android:textStyle="italic"
+            android:textColor="#FFD700"/>
+
+        <ImageView
+            android:id="@+id/mood"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_alignParentRight="true"
+            android:scaleX="1"
+            android:scaleY="1"
+            android:src="@drawable/moods"/>
+
+        <TextView
+            android:layout_alignParentRight="true"
+            android:layout_width="75dp"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Mood"
+            android:textColor="#FFFFFF"/>
+
+        <RelativeLayout
+            android:layout_below="@+id/mood"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/howmanymoods"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:text="How many entries of moods would you like to input?"/>
+
+            <EditText
+                android:id="@+id/moodInput"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/howmanymoods"
+                android:textColorHint="#FFFFFF"
+                android:gravity="center"
+                android:inputType="number"
+                android:hint="Number of moods you want to enter?"/>
+
+            <Button
+                android:id="@+id/enter"
+                android:layout_below="@id/howmanymoods"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:text="Enter"
+                android:onClick="enter"
+                android:layout_alignParentRight="true"
+                android:background="#FFFFFF"/>
+
+            <ImageView
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="60dp"
+                android:id="@+id/sad"
+                android:layout_below="@+id/moodInput"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:onClick="sad"
+                android:src="@drawable/sad"/>
+
+            <ImageView
+                android:layout_marginTop="60dp"
+                android:id="@+id/happy"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@+id/sad"
+                android:layout_below="@+id/moodInput"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:onClick="happy"
+                android:src="@drawable/happy" />
+
+            <ImageView
+                android:layout_marginTop="60dp"
+                android:id="@+id/angry"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@+id/happy"
+                android:layout_below="@+id/moodInput"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:onClick="angry"
+                android:src="@drawable/angry"/>
+
+            <TextView
+                android:id="@+id/moodCount"
+                android:layout_marginLeft="25dp"
+                android:layout_below="@+id/happy"
+                android:layout_toRightOf="@+id/sad"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#FFFFFF"
+                android:textSize="50dp"
+                android:text=""/>
+
+            <TextView
+                android:layout_below="@+id/moodCount"
+                android:id="@+id/moodResults"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                android:text=""/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFF"
+                android:text="back"
+                android:onClick="back"
+                android:layout_alignParentBottom="true"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>
