@@ -56,6 +56,12 @@ Weekly budget and monthly budget works as it is supposed to when the values are 
 My borrowed images from google below.
 
 Fitness image: https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.kissclipart.com%2Fgym-pictogram-clipart-fitness-centre-physical-fitn-2vw9y7%2F&psig=AOvVaw2d0J4ax7BOMpHrjuab_dVc&ust=1616108846731000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCLj6q-a4uO8CFQAAAAAdAAAAABAE
+
+
 Finance image: https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.vectorstock.com%2Froyalty-free-vector%2Fpersonal-finance-cartoon-vector-24477698&psig=AOvVaw1toCh72BvD9DyEB35wrmvu&ust=1616118270330000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCJDQn-3buO8CFQAAAAAdAAAAABAD
+
+
 Calorie image: https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.weightlossresources.co.uk%2Fcalories%2Fburning_calories%2Fburn_more_calories.htm&psig=AOvVaw3isNzkrf5DopbbDoVTjLXP&ust=1616123419473000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCLCLk87vuO8CFQAAAAAdAAAAABAD
+
+
 Mood tracker image: https://www.google.com/url?sa=i&url=https%3A%2F%2Fmagicwareapps.wordpress.com%2Fportfolio%2Fmood-tracker-journal-activity-and-food-diary%2F&psig=AOvVaw1-bZYtnf_5Ew-iuhUvsOO4&ust=1616123500677000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCKDM86zvuO8CFQAAAAAdAAAAABAD
