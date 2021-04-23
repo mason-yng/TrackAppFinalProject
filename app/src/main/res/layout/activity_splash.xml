@@ -23,8 +23,6 @@
         android:src="@drawable/projlogo"
         android:textColor="#FFFFFF" />
 
-
-
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -77,16 +75,5 @@
             android:background="#FFFFFF"
             android:layout_gravity="center"/>
     </RelativeLayout>
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:text="App example:"
-        android:textSize="20sp"
-        android:textColor="#FFFFFF"
-        android:background="#000000"/>
-
-
 
 </LinearLayout>
