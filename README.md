@@ -53,6 +53,8 @@ Soon to be added!! (Full saving of the info again...) but also a full diet plan 
 Currently has 5 prime categories many people budget for and need to calculate costs as well as a 6th category for anything extra. Type in 6 values and calculate to get your total amount in dollars. 
 Weekly budget and monthly budget works as it is supposed to when the values are typed in but the budget values do not stay when the activity is left or when the application is closed. 
 
+My borrowed images from google below.
+
 Fitness image: https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.kissclipart.com%2Fgym-pictogram-clipart-fitness-centre-physical-fitn-2vw9y7%2F&psig=AOvVaw2d0J4ax7BOMpHrjuab_dVc&ust=1616108846731000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCLj6q-a4uO8CFQAAAAAdAAAAABAE
 Finance image: https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.vectorstock.com%2Froyalty-free-vector%2Fpersonal-finance-cartoon-vector-24477698&psig=AOvVaw1toCh72BvD9DyEB35wrmvu&ust=1616118270330000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCJDQn-3buO8CFQAAAAAdAAAAABAD
 Calorie image: https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.weightlossresources.co.uk%2Fcalories%2Fburning_calories%2Fburn_more_calories.htm&psig=AOvVaw3isNzkrf5DopbbDoVTjLXP&ust=1616123419473000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCLCLk87vuO8CFQAAAAAdAAAAABAD
